@@ -19,39 +19,24 @@
             <li><a href="services.html"><b>Services</b></a></li>
         </ul>
     </nav>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const currentPage = window.location.pathname.split("/").pop();
-            const navLinks = document.querySelectorAll("#navmenu a");
-
-            navLinks.forEach(link => {
-                if (link.getAttribute("href") === currentPage) {
-                    link.classList.add("active");
-                }
-            });
-        });
-    </script>
 
     <section id="home">
-        <header id="header">
-            <div class="profile-img">
-                <img src="Files/profile-img.png" width="200" alt="Profile Image">
-            </div>
-            <h1>Emilijus Pocius</h1>
-            <p>I'm AI</p>
-            <div id="socials" class="socials">
-                <a href="https://www.linkedin.com/in/emilijus-pocius-7b3782293/" target="_blank" aria-label="LinkedIn">
-                    <img src="Files/linkedin-logo.png" width="60" class="linkedin" alt="LinkedIn Logo">
-                </a>
-                <a href="https://github.com/EmilijusPocius" target="_blank" aria-label="GitHub">
-                    <img src="Files/github-logo.png" width="60" class="github" alt="GitHub Logo">
-                </a>
-                <a href="https://www.instagram.com/pocius147/" target="_blank" aria-label="Instagram">
-                    <img src="Files/instagram-logo.png" width="60" class="instagram" alt="Instagram Logo">
-                </a>
-            </div>
-        </header>    
+        <div class="profile-img">
+            <img src="Files/profile-img.png" width="200" alt="Profile Image">
+        </div>
+        <h1>Emilijus Pocius</h1>
+        <p>I'm AI</p>
+        <div id="socials" class="socials">
+            <a href="https://www.linkedin.com/in/emilijus-pocius-7b3782293/" target="_blank" aria-label="LinkedIn">
+                <img src="Files/linkedin-logo.png" width="60" class="linkedin" alt="LinkedIn Logo">
+            </a>
+            <a href="https://github.com/EmilijusPocius" target="_blank" aria-label="GitHub">
+                <img src="Files/github-logo.png" width="60" class="github" alt="GitHub Logo">
+            </a>
+            <a href="https://www.instagram.com/pocius147/" target="_blank" aria-label="Instagram">
+                <img src="Files/instagram-logo.png" width="60" class="instagram" alt="Instagram Logo">
+            </a>
+        </div>   
     </section>
 
     <footer id="footer">
@@ -70,6 +55,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/activeClassScript.js"></script>
 
 </body>
 </html>
