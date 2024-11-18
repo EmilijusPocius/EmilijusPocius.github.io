@@ -107,6 +107,10 @@ p {
     color: #ffffff;
 }
 
+#navmenu ul li a.active {
+    color: #ffffff;
+}
+
 #footer {
     background-color: #333;
     color: #ffffff;
