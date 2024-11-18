@@ -1,0 +1,95 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #1f1f1f;
+    margin-bottom: 16px;
+}
+
+button {
+
+}
+
+#socials img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+#socials img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* Header stilius */
+#header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+}
+
+.profile-img img {
+    border-radius: 50%; /* Apskritimo forma nuotraukai */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Šešėlis */
+}
+
+/* Socialiniai tinklai */
+.socials a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.socials img {
+    border-radius: 8px;
+}
+
+.socials a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+#navmenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#navmenu ul li {
+    display: inline;
+}
+
+#navmenu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#navmenu ul li a:hover {
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+}
