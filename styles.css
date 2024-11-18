@@ -7,6 +7,58 @@ html, body {
     background: linear-gradient(#000000, #7f7f7f);
 }
 
+#header, #footer, #home, #about, #resume, #portfolio, #services {
+    animation: fadeInContent 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInContent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 60px;
+    height: 60px;
+    border: 15px solid #000000;
+    border-radius: 100px;
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+    animation: loading 1s  infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
 #navmenu {
     padding: 20px;
     width: 100%;
