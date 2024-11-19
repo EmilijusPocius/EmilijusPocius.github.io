@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Emilijus Pocius">
     <meta name="description" content="Laboratorinis darbas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emilijus Pocius</title>
     <link rel="stylesheet" href="styles.css">
     <script src="JS/loadingScript.js"></script>
@@ -24,23 +25,31 @@
 
     <section id="resume">
         <h2>Resume</h2>
-        <p>Summary of experience and skills, with a strong academic record (GPA: 9.5).</p>
-        <div>
+        <p class="resume-summary">Summary of experience and skills, with a strong academic record (GPA: 9.5).</p>
+    
+        <!-- Summary Section -->
+        <div class="resume-section">
             <h3>Summary</h3>
-            <h4>Emilijus Pocius</h4>
-            <p>Dedicated programmer with a focus on artificial intelligence and systems integration.</p>
-            <ul>
-                <li>Vilnius, Lithuania</li>
-                <li>+370 68417542</li>
-                <li>emilijuspocius@gmail.com</li>
-            </ul>
+            <div class="resume-item">
+                <h4>Emilijus Pocius</h4>
+                <p>Dedicated programmer with a focus on artificial intelligence and systems integration.</p>
+                <ul class="contact-info">
+                    <li><b>Location:</b> Vilnius, Lithuania</li>
+                    <li><b>Phone:</b> +370 68417542</li>
+                    <li><b>Email:</b> <a href="mailto:emilijuspocius@gmail.com">emilijuspocius@gmail.com</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
+    
+        <!-- Education Section -->
+        <div class="resume-section">
             <h3>Education</h3>
-            <h4>AI Systems Integration</h4>
-            <h5>2023 - 2027</h5>
-            <p>Vilnius Tech</p>
-            <p>In-depth study in artificial intelligence systems and integration.</p>
+            <div class="resume-item">
+                <h4>AI Systems Integration</h4>
+                <h5>2023 - 2027</h5>
+                <p><b>Institution:</b> Vilnius Tech</p>
+                <p>In-depth study in artificial intelligence systems and integration.</p>
+            </div>
         </div>
     </section>
 
