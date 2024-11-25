@@ -4,6 +4,6 @@ window.addEventListener("load", () => {
     loader.classList.add("loader-hidden");
 
     loader.addEventListener("transitioned", () => {
-        document.body.removeChild("loader");
+        loader.remove(); 
     })
 })

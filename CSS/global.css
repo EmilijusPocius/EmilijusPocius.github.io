@@ -24,8 +24,8 @@ html, body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden; /* Disable horizontal scrolling */
-    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 /* Links */
@@ -45,8 +45,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
-    transition: opacity 0.75s, visibility 0.75s;
+    background-color: #000000;
+    transition: opacity 0.75s, visibility 0.8s;
 }
 
 .loader-hidden {
@@ -60,8 +60,8 @@ a {
     height: 60px;
     border: 15px solid #4757ff;
     border-radius: 100px;
-    border-top-color: #ffffff;
-    border-bottom-color: #ffffff;
+    border-top-color: #000000;
+    border-bottom-color: #000000;
     animation: loading 1s  infinite;
 }
 
@@ -107,6 +107,57 @@ a {
 
 .navbar a:hover {
     color: #7c87ff;
+}
+
+.navbar button {
+    color: #4757ff;
+}
+
+.dropdown-toggle,
+.dropdown-menu li{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none; /* Hide regular navbar links */
+    }
+
+    .dropdown-menu li {
+        display: block;
+    }
+    
+    .dropdown-toggle {
+        display: inline-block;
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        display: none; /* Initially hide dropdown menu */
+        position: absolute;
+        top: 100%;
+        right: 1rem;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        list-style: none;
+        padding: 1rem;
+    }
+
+    .dropdown-menu a {
+        display: block;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #333;
+        text-align: left;
+    }
+
+    .dropdown-menu a:hover {
+        background-color: #f4f4f4;
+    }
 }
 
 /* Mode Switch */
@@ -190,17 +241,8 @@ footer p {
 
 /* Dark Mode Styles */
 body.dark-mode {
-    background-color: #1c1c1c; /* Dark background */
+    background-color: #2c2c2c;
     color: #f4f4f4; /* Light text */
-}
-
-body.dark-mode .loader {
-    background-color: #2c2c2c; /* Dark background when in dark mode */
-}
-
-body.dark-mode .loader::after {
-    border-top-color: #2c2c2c; /* Lighter spinner color for dark mode */
-    border-bottom-color: #2c2c2c; /* Lighter spinner color for dark mode */
 }
 
 body.dark-mode .navbar {
@@ -222,4 +264,12 @@ body.dark-mode .footer {
 
 body.dark-mode .footer p {
     color: #ddd;
+}
+
+body.dark-mode .dropdown-menu a{
+    color: #ddd;
+}
+
+body.dark-mode .dropdown-menu {
+    background-color: #333;
 }
