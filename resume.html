@@ -2,24 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Emilijus Pocius">
-    <meta name="description" content="Laboratorinis darbas">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emilijus Pocius</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="author" content="Emilijus Pocius">
+    <title>Home - Emilijus Pocius</title>
+    <!-- Global styles -->
+    <link rel="stylesheet" href="CSS/global.css">
+    <!-- Home page styles -->
+    <link rel="stylesheet" href="CSS/resume.css">
+
     <script src="JS/loadingScript.js"></script>
-    <script src="JS/activeClassScript.js"></script>
-    <!-- Sukūrė: Emilijus Pocius, EDIf-23/2 -->
 </head>
 <body>
-
-    <nav id="navmenu">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="mode-switch">
+            <label for="mode-toggle" class="switch">
+                <input type="checkbox" id="mode-toggle" aria-label="Toggle dark/light mode">
+                <span class="slider"></span>
+            </label>
+        </div>
         <ul>
-            <li><a href="index.html"><b>Home</b></a></li>
-            <li><a href="about.html"><b>About</b></a></li>
-            <li><a href="resume.html"><b>Resume</b></a></li>
-            <li><a href="portfolio.html"><b>Portfolio</b></a></li>
-            <li><a href="services.html"><b>Services</b></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html" class="active">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -55,22 +63,24 @@
 
     <div class="loader"></div>
 
+    <!-- Footer -->
     <footer id="footer">
         <div class="footer-content">
-            <p> 2024 &copy; Emilijus Pocius</p>
+            <p>2024 &copy; Emilijus Pocius</p>
             <div class="footer-socials">
                 <a href="https://www.linkedin.com/in/emilijus-pocius-7b3782293/" target="_blank" aria-label="LinkedIn">
-                    <img src="Files/linkedin-logo.png" width="30" alt="LinkedIn Logo">
+                    <img src="Files/linkedin-logo.png" alt="LinkedIn Logo">
                 </a>
                 <a href="https://github.com/EmilijusPocius" target="_blank" aria-label="GitHub">
-                    <img src="Files/github-logo.png" width="30" alt="GitHub Logo">
+                    <img src="Files/github-logo.png" alt="GitHub Logo">
                 </a>
                 <a href="https://www.instagram.com/pocius147/" target="_blank" aria-label="Instagram">
-                    <img src="Files/instagram-logo.png" width="30" alt="Instagram Logo">
+                    <img src="Files/instagram-logo.png" alt="Instagram Logo">
                 </a>
             </div>
         </div>
     </footer>
 
+    <script src="JS/themeToggle.js"></script>
 </body>
 </html>
