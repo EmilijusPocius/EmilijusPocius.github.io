@@ -11,10 +11,15 @@
 
     <script src="JS/loadingScript.js"></script>
     <script src="JS/dropDownMenu.js"></script>
+    <script src="JS/scrollToTopButton.js"></script>
 </head>
 <body>
+    <a href="#main" class="back-to-top">
+        <i class="arrow-up"></i>
+    </a>
+
     <nav class="navbar">
-        <div class="mode-switch">
+        <div class="mode-switch" title="Toggle dark/light mode">
             <label for="mode-toggle" class="switch">
                 <input type="checkbox" id="mode-toggle" aria-label="Toggle dark/light mode">
                 <span class="slider"></span>
@@ -40,7 +45,8 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <main>
+
+    <main id="main">
         <section id="services">
             <h2>Services</h2>
             <video width="300vw" controls>
@@ -56,6 +62,7 @@
             </audio>
         </section>
     </main>
+
 
     <div class="loader"></div>
 

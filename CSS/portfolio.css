@@ -24,6 +24,12 @@ body.dark-mode #portfolio p {
 }
 
 /* Portfolio Image */
+.images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Dynamic columns */
+    grid-gap: 50px;
+}
+
 #portfolio img {
     width: 300px;
     height: auto;

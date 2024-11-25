@@ -7,7 +7,7 @@
 }
 
 main {
-    flex-grow: 1; /* Pushes the footer to the bottom */
+    flex-grow: 1;
 }
 
 /* Body styles */
@@ -26,6 +26,7 @@ html, body {
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 /* Links */
@@ -210,6 +211,39 @@ input:checked + .slider:before {
     transform: translateX(14px);
 }
 
+
+/* Scroll to Top Button */
+#top {
+    height: 0;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3949ff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.back-to-top:hover {
+    background-color:#7c87ff;
+}
+
+.back-to-top .arrow-up {
+    width: 14px;
+    height: 14px;
+    border-left: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    transform: rotate(135deg);
+    margin-bottom: -7px;
+    pointer-events: none;
+}
+
 /* Footer */
 footer {
     flex-shrink: 0;
@@ -235,8 +269,6 @@ footer p {
     transform: scale(1.2);
     opacity: 0.8;
 }
-
-
 
 /* Dark Mode Styles */
 body.dark-mode {
