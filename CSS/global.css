@@ -213,10 +213,6 @@ input:checked + .slider:before {
 
 
 /* Scroll to Top Button */
-#top {
-    height: 0;
-}
-
 .back-to-top {
     position: fixed;
     bottom: 2rem;
@@ -242,6 +238,10 @@ input:checked + .slider:before {
     transform: rotate(135deg);
     margin-bottom: -7px;
     pointer-events: none;
+}
+
+.back-to-top.show{
+    display: inline-flex;
 }
 
 /* Footer */

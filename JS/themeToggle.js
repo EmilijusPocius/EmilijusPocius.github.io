@@ -1,7 +1,5 @@
-// themeToggle.js
 const toggleSwitch = document.getElementById('mode-toggle');
 
-// Check for saved user preference in localStorage
 const currentMode = localStorage.getItem('mode') || 'light';
 
 if (currentMode === 'dark') {
