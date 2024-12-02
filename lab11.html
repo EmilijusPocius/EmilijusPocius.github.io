@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emilijus Pocius">
+    <title>Emilijus Pocius - Home</title>
+
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/lab11.css">
+
+    <script src="JS/loadingScript.js"></script>
+    <script src="JS/dropDownMenu.js"></script>
+</head>
+<body>
+    <a href="#main" class="back-to-top">
+        <i class="arrow-up"></i>
+    </a>
+
+    <nav class="navbar">
+        <div class="mode-switch">
+            <label for="mode-toggle" class="switch">
+                <input type="checkbox" id="mode-toggle" aria-label="Toggle dark/light mode">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div class="menu">
+            <button class="dropdown-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="dropdown-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="lab11.html" class="active">Lab11</a></li>
+            </ul>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="lab11.html" class="active">Lab11</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <section class="lab11">
+            <h1>Laboratorinis 11</h1>
+            
+            <p>
+                Parašykite žemiau pateiktą matematinį objektą (parinkti vieną). Matematinio objekto kodas
+                turi būti įskaitomas ir turėti suformatuotas kodo įtraukas (angl. identation). Kiekviena unikali
+                žymė (angl. tag) turi turėti komentarą, paaiškinti žymės funkciją. Matematinio objekto vietą
+                tekste pasirinkti savo nuožiūra, bet ji turi būti tekste tarp ar po pastraipų.
+            </p>
+
+            <!-- Matematinė išraiška -->
+            <math display="block">
+                <!-- Išraiškos eilutė -->
+                <mrow>
+                    <!-- Simbolis -->
+                    <mi> σ = </mi>
+                    
+                    <!-- Kvadratinė šaknis -->
+                    <msqrt>
+                        <!-- Trupmena -->
+                        <mfrac>
+                            <!-- Skaicius -->
+                            <mn>1</mn>
+                            <mi>N</mi>
+                        </mfrac>
+                        
+                        <!-- Limitai -->
+                        <munderover>
+                            <!-- Operatorius-->
+                            <mo>∑</mo>
+                            <!-- Apatinė riba sumavimui (i = 1) -->
+                            <mrow>
+                                <mi>i</mi>
+                                <mo>=</mo>
+                                <mn>1</mn>
+                            </mrow>
+                            <!-- Viršutinė riba sumavimui (N) -->
+                            <mrow>
+                                <mi>N</mi>
+                            </mrow>
+                        </munderover>
+                        
+                        <!-- Virsutinis indeksas -->
+                        <msup>
+                            <!-- (xi - µ) eilute-->
+                            <mrow>
+                                <mi>(</mi>
+                                <!-- Apatinis indeksas -->
+                                <msub>
+                                    <mi>x</mi>
+                                    <mi>i</mi>
+                                </msub>
+                                <ms>-</ms>
+                                <mi>µ</mi>
+                                <mi>)</mi>
+                            </mrow>
+                            <!-- Kvadratas -->
+                            <mn>2</mn>
+                        </msup>
+                    </msqrt>
+                </mrow>
+            </math>
+            <!-- Matematinės išraiškos pabaiga -->
+
+            <p>
+                Įtraukite SVG piešinį į tą dalį ar elementą jūsų svetainėje, kur jis galėtų pagerinti naudotojo
+                sąsają arba padidinti vizualinį svetainės patrauklumą.
+                Puslapis turi atitikti ‘W3C Web Validator’ standartus.
+                Išsaugokite pakeitimus GitHub saugykloje (commit changes)
+            </p>
+            
+            <img src="Files/pi.svg" alt="pi" class="pi_svg">
+
+            <div id="clock">00:00:00</div>
+
+            <script>
+                function updateClock() {
+                    const now = new Date(); // Gauti dabartinį laiką
+                    let hours = now.getHours(); // Valandos
+                    let minutes = now.getMinutes(); // Minutės
+                    let seconds = now.getSeconds(); // Sekundės
+        
+                    hours = hours < 10 ? '0' + hours : hours;
+                    minutes = minutes < 10 ? '0' + minutes : minutes;
+                    seconds = seconds < 10 ? '0' + seconds : seconds;
+        
+                    const timeString = `${hours}:${minutes}:${seconds}`;
+        
+                    document.getElementById('clock').textContent = timeString;
+                }
+        
+                setInterval(updateClock, 1000);
+        
+                updateClock();
+            </script>
+        </section>
+    </main>
+    
+
+    <div class="loader"></div>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <p>2024 &copy; Emilijus Pocius</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/emilijus-pocius-7b3782293/" target="_blank" aria-label="LinkedIn">
+                    <img src="Files/linkedin-logo.png" alt="LinkedIn Logo">
+                </a>
+                <a href="https://github.com/EmilijusPocius" target="_blank" aria-label="GitHub">
+                    <img src="Files/github-logo.png" alt="GitHub Logo">
+                </a>
+                <a href="https://www.instagram.com/pocius147/" target="_blank" aria-label="Instagram">
+                    <img src="Files/instagram-logo.png" alt="Instagram Logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/themeToggle.js"></script>
+</body>
+</html>
