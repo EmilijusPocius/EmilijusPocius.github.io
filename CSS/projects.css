@@ -1,44 +1,44 @@
 /* Portfolio Page Styles */
 
-#portfolio {
-    max-width: 900px;
+#projects {
+    max-width: 80rem;
     margin: 2rem auto;
     padding: 1rem;
     text-align: center;
 }
 
-#portfolio h2 {
+#projects h2 {
     font-size: 2.5rem;
     color: #4757ff;
     margin-bottom: 1rem;
 }
 
-#portfolio p {
+#projects p {
     color: #333;
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
-body.dark-mode #portfolio p {
+body.dark-mode #projects p {
     color: #ccc; /* Light text for paragraph in dark mode */
 }
 
 /* Portfolio Image */
 .images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Dynamic columns */
-    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr)); /* Dynamic columns */
+    grid-gap: 20px;
 }
 
-#portfolio img {
-    width: 300px;
-    height: auto;
+#projects img {
+    width: auto;
+    height: 500px;
     border: 2px solid #4757ff;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#portfolio img:hover {
+#projects img:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
