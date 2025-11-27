@@ -3,71 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Emilijus Pocius">
-    <title>Emilijus Pocius - Home</title>
-
-    <link rel="stylesheet" href="CSS/global.css">
-    <link rel="stylesheet" href="CSS/home.css">
-
-    <script src="JS/loadingScript.js"></script>
-    <script src="JS/dropDownMenu.js"></script>
+    <title>Emilijus Pocius - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <a href="#main" class="back-to-top">
-        <i class="arrow-up"></i>
-    </a>
+    <div id="particles-js"></div>
 
     <nav class="navbar">
-        <div class="mode-switch">
-            <label for="mode-toggle" class="switch">
-                <input type="checkbox" id="mode-toggle" aria-label="Toggle dark/light mode">
-                <span class="slider"></span>
-            </label>
-        </div>
-        <div class="menu">
-            <button class="dropdown-toggle" aria-label="Toggle menu">☰</button>
-            <ul class="dropdown-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </div>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
         </ul>
     </nav>
 
-    <main id="main">
-        <section class="hero">
-            <div class="hero-content">
-                <img src="Files/profile-img.png" alt="Emilijus Pocius" class="profile-picture">
-                <h1>Emilijus Pocius</h1>
-                <p>I am a dedicated AI developer with a focus on data analysis.</p>
-                <a href="about.html" class="btn">About Me</a>
-            </div>
-        </section>
-    </main>
+    <section id="home" class="home">
+        <div class="content">
+            <h1>Emilijus Pocius</h1>
+            <h2></h2>
+                <div class="home-contact">
+                    <p class="home-contact-intro">Feel free to reach out to me.</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/EmilijusPocius" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/emilijus-pocius-7b3782293/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:emilijuspocius@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            <a href="#about" class="scroll-down-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
 
-    <div class="loader"></div>
+    <section id="about" class="about">
+        <div class="content">
+            <h2>About Me</h2>
+            <p>
+            Hello! I'm Emilijus, a third-year Artificial Intelligence Systems student at VilniusTech, passionate about algorithms 
+            and data-driven solutions. I have hands-on experience with Python, TensorFlow, and Keras, and enjoy applying AI to solve 
+            real-world problems. I am focused on learning and expanding my skills, while contributing to innovative projects whenever possible.
+            </p>
+        </div>
+    </section>
 
-    <footer id="footer">
-        <div class="footer-content">
-            <p>2024 &copy; Emilijus Pocius</p>
-            <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/emilijus-pocius-7b3782293/" target="_blank" aria-label="LinkedIn">
-                    <img src="Files/linkedin-logo.png" alt="LinkedIn Logo">
-                </a>
-                <a href="https://github.com/EmilijusPocius" target="_blank" aria-label="GitHub">
-                    <img src="Files/github-logo.png" alt="GitHub Logo">
-                </a>
+    <section id="projects" class="projects">
+        <div class="content">
+            <h2>Projects</h2>
+            <div class="project-cards">
+                    <div class="card">
+                        <div class="card-image-container">
+                            <img src="p1.png" alt="Project 1">
+                        </div>
+                        <div class="card-text">
+                            <h4>Python Chess Game</h4>
+                            <p>
+                            For my Object-Oriented Programming course, I developed a 
+                            complete two-player chess game using Python and Pygame. 
+                            This project was a great opportunity to aquire OOP skills, 
+                            as I used concepts like inheritance and polymorphism to 
+                            represent the different chess pieces and their unique movements. 
+                            I also implemented design patterns like the Factory Method to 
+                            create the pieces. Beyond just moving pieces, the game 
+                            enforces all the rules of chess, including tricky ones 
+                            like en passant and castling. I also added features like 
+                            customizable timers and a log file that saves game stats after 
+                            each match. This project wasn't just about fulfilling a course 
+                            requirement, it was a chance to build a complete, playable game 
+                            and solidify my understanding of Python and software design 
+                            principles.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image-container">
+                            <img src="p2.png" alt="Project 2">
+                        </div>
+                        <div class="card-text">
+                            <h4>Human Pose Estimation with Orbbec Cameras</h4>
+                            <p>
+                            For my research project, I conducted a comparative evaluation of three Orbbec depth cameras — 
+                            Gemini 2, Astra 2, and Femto Mega using state-of-the-art human pose estimation algorithms such as 
+                            MediaPipe and MoveNet. I annotated keypoints manually in CVAT, and processed the results in Python using 
+                            OpenCV, NumPy, and Pandas. The project involved analyzing positional accuracy, temporal stability, and 
+                            detection confidence, and exporting the data to Excel for further statistical evaluation. Through this work, 
+                            I gained hands-on experience with RGB-D hardware, pose estimation pipelines, and performance analysis, 
+                            while deepening my understanding of real-world AI system implementation.
+                            </p>
+
+                        </div>
+                    </div>
             </div>
         </div>
+    </section>
+
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <footer>
+        <p>&copy; 2025 Emilijus Pocius</p>
     </footer>
 
-    <script src="JS/themeToggle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
